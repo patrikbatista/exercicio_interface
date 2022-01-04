@@ -18,8 +18,48 @@ public class Contract {
 		this.totalValue = totalValue;
 	}
 	
+
+	public Integer getNumber() {
+		return number;
+	}
+
+	public void setNumber(Integer number) {
+		this.number = number;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public Double getTotalValue() {
+		return totalValue;
+	}
+
+	public void setTotalValue(Double totalValue) {
+		this.totalValue = totalValue;
+	}
+
+	public List<Installment> getInstallments() {
+		return installments;
+	}
+
+	public void setInstallments(List<Installment> installments) {
+		this.installments = installments;
+	}
+	
 	public void removeInstallment(Installment installment) {
 		installments.remove(installment);
-	}		
+	}
+	
+	public void addInstallment(Installment installment) {
+		installments.add(installment);
+	}
+	
+	
+	
 	
 }
